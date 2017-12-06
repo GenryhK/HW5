@@ -1,0 +1,17 @@
+.video_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.video_wrapper video {
+    width: 80%;
+    max-width: 800px;
+    height: 500px;
+    opacity: 0.3;
+}
+
+.video_wrapper video:hover {
+    opacity: 1;
+}
+

@@ -1,0 +1,677 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*/css reset*/
+
+header {
+    background: url('img/background.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
+}
+
+.logo h1 {
+    display: none;
+}
+
+.logo img {
+    height: 100%;
+    width: 100px;
+}
+
+.header_links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.main_navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_section nav {
+    width: 100%;
+}
+
+.main_navigation ul {
+    width: 100%;
+}
+
+.main_navigation li {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+}
+
+.main_navigation li:hover {
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+.main_navigation li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+}
+
+.header_links button {
+    display: none;
+}
+
+.first_screen_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first_screen_content img {
+    width: 100%;
+}
+
+.first_screen_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_content h2 {
+    font-size: 4em;
+}
+
+.text_content p {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.first_screen_content img {
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+    border-radius: 3px;
+    opacity: 0.1;
+}
+
+.first_screen_content img:hover {
+    opacity: 1;
+}
+
+.btn {
+    width: 100px;
+    height: 25px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    transform: scale(2, 3);
+}
+
+.offer_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('img/island_3-e1482087951800.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.offer_description h2 {
+    margin-top: 50px;
+    font-size: 70px;
+    color: #6B3B24;
+}
+
+.offer_description h3 {
+    margin-top: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #6B3B24;
+}
+
+.experiance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.experiance ul {
+    width: 100%;
+    font-size: 15px;
+    color: white;
+}
+
+.experiance ul li {
+    margin-top: 7px;
+    margin-left: 10%;
+}
+
+.image_gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1796BC;
+}
+
+.image_gallery h2 {
+    margin-top: 50px;
+    font-size: 70px;
+    color: #6B3B24;
+}
+
+.hero_image {
+    display: none;
+}
+
+.image_slider {
+    margin-top: 30px;
+}
+
+.image_slider ul{
+    display: flex;
+    width: 100%;
+}
+
+.image_slider img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider_controls {
+    display: none;
+}
+
+.image_gallery p {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.price_offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('img/3445705_original.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.price_offers h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 70px;
+    color: blue;
+}
+
+.price_offers h3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: blue;
+}
+
+.price_offers section {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40%;
+    padding-bottom: 200px;
+}
+
+.price_offers section button {
+margin-left: 4%;
+}
+
+.offer_body {
+   margin-left: 10px;
+    color: white;
+    font-size: 1em;
+}
+
+footer {
+   position: absolute;
+    width: 100%;
+    background-color: #AFAFAF;
+}
+
+.footer_section .inner_wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.social {
+   text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #6B3B24;
+}
+
+.social_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.email:before {
+    content: 'email@ :';
+}
+
+.contact_info a{
+   padding-bottom: 15px;
+}
+
+.twitter {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('img/twitter.svg') no-repeat center;
+    background-size: 30px;
+}
+
+.facebook {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('img/20837.png') no-repeat center;
+    background-size: 20px;
+}
+
+.instagram {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('img/instagram-png-instagram-icon-1600.png') no-repeat center;
+    background-size: 25px;
+}
+
+@media (max-width: 700px){
+    header {
+        background: url('img/background.jpg') no-repeat;
+        background-size: 100% 100%;
+        height: 600px;
+    }
+    
+    .logo h1 {
+        display: none;
+    }
+    
+    .logo img {
+        display: none;
+    }
+    
+    .header_links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .main_navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .header_section nav {
+        width: 100%;
+    }
+    
+    .main_navigation ul {
+        width: 100%;
+    }
+    
+    .main_navigation li {
+        display: flex;
+        padding: 10px;
+        list-style: none;
+    }
+    
+    .main_navigation li:hover {
+        border: 4px solid white;
+        border-radius: 10px;
+    }
+    
+    .main_navigation li a {
+        text-decoration: none;
+        font-size: 2em;
+        color: white;
+    }
+    
+    .header_links button {
+        display: none;
+    }
+    
+    .first_screen_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .first_screen_content img {
+        width: 100%;
+    }
+    
+    .first_screen_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+    }
+    
+    .text_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        color: white;
+    }
+    
+    .banner {
+        display: none;
+    }
+    
+    .text_content h2 {
+        font-size: 2em;
+    }
+    
+    .text_content p {
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+    
+    .first_screen_content img {
+        margin-top: 50px;
+        height: 200px;
+        width: 100%;
+        border-radius: 3px;
+        opacity: 0.1;
+    }
+    
+    .first_screen_content img:hover {
+        opacity: 1;
+    }
+    
+    .btn {
+        width: 100px;
+        height: 25px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: white;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid white;
+    }
+    
+    .btn:hover {
+        transform: scale(2, 3);
+    }
+    
+    .offer_description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url('img/island_3-e1482087951800.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .offer_description h2 {
+        margin-top: 50px;
+        font-size: 70px;
+        color: #6B3B24;
+    }
+    
+    .offer_description h3 {
+        margin-top: 10px;
+        margin-top: 10px;
+        font-size: 30px;
+        color: #6B3B24;
+    }
+    
+    .experiance {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    
+    .experiance ul {
+        width: 100%;
+        font-size: 15px;
+        color: white;
+    }
+    
+    .experiance ul li {
+        margin-top: 7px;
+        margin-left: 10%;
+    }
+    
+    .image_gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1796BC;
+    }
+    
+    .image_gallery h2 {
+        margin-top: 50px;
+        font-size: 70px;
+        color: #6B3B24;
+    }
+    
+    .hero_image {
+        display: none;
+    }
+    
+    .image_slider {
+        margin-top: 30px;
+    }
+    
+    .image_slider ul{
+        display: flex;
+        width: 100%;
+    }
+    
+    .image_slider img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slider_controls {
+        display: none;
+    }
+    
+    .image_gallery p {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 1em;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .price_offers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: url('img/3445705_original.jpg') no-repeat;
+        background-size: 100%;
+    }
+    
+    .price_offers h2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 70px;
+        color: blue;
+    }
+    
+    .price_offers h3 {
+        font-weight: bold;
+        font-size: 30px;
+        color: blue;
+    }
+    
+    .price_offers section {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 40%;
+        padding-bottom: 200px;
+    }
+    
+    .price_offers section button {
+        margin-left: 4%;
+    }
+    
+    .offer_body {
+        margin-left: 10px;
+        color: white;
+        font-size: 1em;
+    }
+    
+    footer {
+        position: absolute;
+        width: 100%;
+        background-color: #AFAFAF;
+    }
+    
+    .footer_section .inner_wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .social {
+        text-align: center;
+    }
+    
+    footer h2 {
+        margin-bottom: 20px;
+        font-size: 2em;
+        color: #6B3B24;
+    }
+    
+    .social_links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100px;
+    }
+    
+    .email:before {
+        content: 'email@ :';
+    }
+    
+    .contact_info a{
+        padding-bottom: 15px;
+    }
+    
+    .twitter {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('img/twitter.svg') no-repeat center;
+        background-size: 30px;
+    }
+    
+    .facebook {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('img/20837.png') no-repeat center;
+        background-size: 20px;
+    }
+    
+    .instagram {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('img/instagram-png-instagram-icon-1600.png') no-repeat center;
+        background-size: 25px;
+    }
+}
